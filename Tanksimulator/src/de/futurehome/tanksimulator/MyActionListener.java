@@ -20,7 +20,7 @@ public class MyActionListener implements ActionListener {
 			fuellstand = fuellstand + 5;
 			f.myTank.setFuellstand(fuellstand);
 
-			f.lblFuellstand.setText("" + fuellstand);
+			f.lblFuellstand.setText("" + fuellstand + " (" + fuellstand / 200 * 100 + "%)");
 
 		}
 
@@ -29,7 +29,7 @@ public class MyActionListener implements ActionListener {
 			fuellstand1 = fuellstand1 - 2;
 			f.myTank.setFuellstand(fuellstand1);
 
-			f.lblFuellstand.setText("" + fuellstand1);
+			f.lblFuellstand.setText("" + fuellstand1 + " (" + fuellstand1 / 200 * 100 + "%)");
 		}
 		
 		if (obj == f.btnZuruecksetzen) {
@@ -37,7 +37,7 @@ public class MyActionListener implements ActionListener {
 			fuellstand = fuellstand * 0;
 			f.myTank.setFuellstand(fuellstand);
 			
-			f.lblFuellstand.setText("" + fuellstand);
+			f.lblFuellstand.setText("" + fuellstand + " (" + fuellstand / 200 * 100 + "%)" );
 		}
 		
 	}
