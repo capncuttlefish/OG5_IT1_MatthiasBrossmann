@@ -19,6 +19,7 @@ public class TankSimulator extends Frame {
 	public Button btnBeenden = new Button("Beenden");
 	public Button btnEinfuellen = new Button("Einf�llen");
 	public Button btnVerbrauchen = new Button("Verbrauchen");
+	public Button btnZuruecksetzen = new Button("Zuruecksetzen");
 	
 	private Panel pnlNorth = new Panel();
 	private Panel pnlCenter = new Panel(new FlowLayout());
@@ -37,6 +38,7 @@ public class TankSimulator extends Frame {
 		this.pnlSouth.add(this.btnEinfuellen);
 		this.pnlSouth.add(this.btnVerbrauchen);
 		this.pnlSouth.add(this.btnBeenden);
+		this.pnlSouth.add(this.btnZuruecksetzen);
 		this.add(this.pnlNorth, BorderLayout.NORTH);
 		this.add(this.pnlCenter, BorderLayout.CENTER);
 		this.add(this.pnlSouth, BorderLayout.SOUTH);
@@ -47,6 +49,7 @@ public class TankSimulator extends Frame {
 		this.btnEinfuellen.addActionListener(myActionListener);
 		this.btnVerbrauchen.addActionListener(myActionListener);
 		this.btnBeenden.addActionListener(myActionListener);
+		this.btnZuruecksetzen.addActionListener(myActionListener);
 	}
 
 	public static void main(String argv[]) {
