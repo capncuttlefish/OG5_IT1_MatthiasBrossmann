@@ -11,11 +11,11 @@ public class Raumschiff {
 	// Attribute
 	private double posX;
 	private double posY;
-	private int maxKapazitaet;
+	private int maxLadekapazitaet;
 	private String typ;
 	private String antrieb;
 	private int winkel;
-	
+
 	// Methoden
 
 	public double getPosX() {
@@ -34,12 +34,12 @@ public class Raumschiff {
 		this.posY = posY;
 	}
 
-	public int getMaxKapazitaet() {
-		return maxKapazitaet;
+	public int getMaxLadekapazitaet() {
+		return maxLadekapazitaet;
 	}
 
-	public void setMaxKapazitaet(int maxKapazitaet) {
-		this.maxKapazitaet = maxKapazitaet;
+	public void setMaxLadekapazitaet(int maxKapazitaet) {
+		this.maxLadekapazitaet = maxLadekapazitaet;
 	}
 
 	public String getTyp() {
@@ -68,15 +68,9 @@ public class Raumschiff {
 
 	// Darstellung
 	public static char[][] getDarstellung() {
-		char[][] raumschiffShape = { 
-				{'\0', '\0','_', '\0', '\0'},
-				{'\0', '/', 'X', '\\', '\0'},
-				{'\0', '{', 'X', '}', '\0'},
-				{'\0', '{', 'X', '}', '\0'},
-				{'/', '_', '_','_', '\\'},				
-		};
+		char[][] raumschiffShape = { { '\0', '\0', '_', '\0', '\0' }, { '\0', '/', 'X', '\\', '\0' },
+				{ '\0', '{', 'X', '}', '\0' }, { '\0', '{', 'X', '}', '\0' }, { '/', '_', '_', '_', '\\' }, };
 		return raumschiffShape;
 	}
 
 }
-
