@@ -1,4 +1,4 @@
-package de.oszimt.starsim2099;
+	package de.oszimt.starsim2099;
 
 import java.util.ArrayList;
 import net.slashie.util.Position;
