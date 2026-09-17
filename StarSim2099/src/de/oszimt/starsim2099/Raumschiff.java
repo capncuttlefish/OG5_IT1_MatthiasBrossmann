@@ -38,7 +38,7 @@ public class Raumschiff {
 		return maxLadekapazitaet;
 	}
 
-	public void setMaxLadekapazitaet(int maxKapazitaet) {
+	public void setMaxLadekapazitaet(int maxLadekapazitaet) {
 		this.maxLadekapazitaet = maxLadekapazitaet;
 	}
 
